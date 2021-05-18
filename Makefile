@@ -94,7 +94,7 @@ $(FFDIR)/configure:
 ifdef CURL
 	curl -o /tmp/$(FFDIR).tar.xz https://www.ffmpeg.org/releases/$(FFDIR).tar.xz
 else
-	wget -q --show-progress -O /tmp/$(FFDIR).tar.xz https://www.ffmpeg.org/releases/$(FFDIR).tar.xz
+	wget -q -O /tmp/$(FFDIR).tar.xz https://www.ffmpeg.org/releases/$(FFDIR).tar.xz
 endif
 	tar xf /tmp/$(FFDIR).tar.xz
 
